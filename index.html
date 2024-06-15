@@ -14,7 +14,7 @@
             <div class="search-box">
                 <input type="text" class="input-box" placeholder="Enter your location">
 
-                <button><i class="fa-solid fa-magnifying-glass fa-flip"></i>   </button>     </div>
+                <button><i class="fa-solid fa-magnifying-glass fa-flip" id="searchBtn"></i>   </button>     </div>
 
         <div class="weather-body">
             <img src="/assets/clear.png" alt="Weather Image">
@@ -22,12 +22,32 @@
 
             <div class="weather-box">
                 <p class="temprature">0°C</p>
+                <p class="descripition">Clear Sky</p>
+            </div>
+
+            <div class="weather-detail">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">50%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i> 
+                    <div class="text">
+                    <span id="wind-speed">15Km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         
     </div>
 
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -18,7 +18,11 @@ async function chechWeather(city){
     const weather_data = await fetch(`${url}`).then(response=>response.json());
     console.log(weather_data);
 
-
+  if(weather_data.cod==`404`){
+    alert('Enter Correct City Name!');
+    console.log("error");
+    return;
+  }
     temprature.innerHTML = `${Math.round(weather_data.main.temp-273.15)}°C`;
     // description.innerHTML = `${weather_data.weather[0].description}`;
     humidity.innerHTML = `${weather_data.main.humidity}%`;
